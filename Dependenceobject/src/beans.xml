@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id="mathcodeobject" class="com.Dependenobject.in.Mathcode"></bean>     
+<bean id="San" class="com.Dependenobject.in.StudentSan">
+<property name="id" value="0561"/>
+<property name="mathcode" ref="mathcodeobject">
+</property>
+</bean>
+<bean id="vam" class="com.Dependenobject.in.StudentVam">
+<property name="mathcode" ref="mathcodeobject"/>
+</bean>
+        </beans>
